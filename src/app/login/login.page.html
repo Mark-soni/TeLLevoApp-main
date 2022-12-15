@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar color="dark">
+    <ion-title style="text-align:center"> {{ 'Login' | translate }}</ion-title>
+    <ion-buttons slot="start">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content> <!--logi-->
+
+    <ion-grid class="grid1">
+        
+        <ion-row class="row1">
+            <ion-col>
+              <div>
+                <img class="Pin" src="assets/Prueba3.png" >
+                <!--<h1 class="Bienvenido" >BIENVENIDO </h1>-->
+              </div>
+            </ion-col>
+        </ion-row>     
+        <ion-row class="row2">
+            <ion-col>
+              
+            </ion-col>
+        </ion-row>
+        
+    </ion-grid>
+    <!--Login-->
+  <ion-slide> 
+    <div class="contaier-login">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <h1 class="nombreInicio">{{ "Iniciar Sesión" | translate }}</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-list class="fondoInicio">
+  
+                      <ion-item>
+                        <ion-icon name="person-sharp" class="icon-login"></ion-icon>
+                        <ion-input  name="user" type="text" required placeholder="{{ 'Usuario' | translate }}" #txtEmail></ion-input>
+                    </ion-item>
+                    <br />
+                    <ion-item>
+                      <ion-icon name="lock-closed-sharp" class="contra"></ion-icon>
+                        <ion-input name="password" type="password" required placeholder="{{ 'Contraseña' | translate }}" #txtPass></ion-input>
+                    </ion-item>
+  
+                    </ion-list>
+                </ion-col>
+            </ion-row> 
+            <div class="form-group">
+                <button class="button button-5" (click)="login(txtEmail,txtPass)"><ion-icon name="person-sharp"></ion-icon>{{ "Iniciar sesión" | translate }}</button>
+            </div>
+              <div class="form-group">
+                <button class="button button-5" [routerLink]="['/registro']">{{ "Registrar" | translate }}</button>
+              </div>
+              <div class="form-group" style="margin-top: 12px ;">
+                <button class="button button-5" (click)="onGoogleLogin()"><ion-icon name="logo-google"></ion-icon> Google</button>
+                <button class="button button-5" (click)="onGitHubLogin()"><ion-icon name="logo-github"></ion-icon> GitHub</button>
+              </div>
+            <ion-row>
+                <ion-col>
+                    <ion-label>
+                        <h3 class="contra"  [routerLink]="['/pass-resset']">{{ "¿Olvido la contraseña?" | translate }}</h3>
+                    </ion-label>
+                </ion-col>
+            </ion-row>
+            <div>
+              
+                <img src="/assets/icon/mundo.png" class="mundo" />
+                <ion-select class="select" cancelText="Cancel" [(ngModel)]="idioma" (ionChange)="changeLang($event)">
+                  <ion-select-option *ngFor="let lang of langs">{{ lang }}</ion-select-option>
+                </ion-select>
+              
+            </div>
+           <h6 class="alerta {{claseMensaje}}"> {{ mensaje }} </h6>
+        </ion-grid>
+    </div>
+  </ion-slide> 
+<!--Login-->
+  
+
+</ion-content>
+
+<!--<ion-row>-->
+    <!--<ion-col>-->
+        <!--<ion-button type="submit" fill="solid" expand="full" (click)="login(txtEmail,txtPass)"> Entrar</ion-button>
+        <!-<ion-button type="submit" fill="solid" expand="full" (click)="registrar(txtEmail,txtPass)"> Registrar</ion-button>-->
+    <!--</ion-col>-->
+<!--</ion-row>-->
+

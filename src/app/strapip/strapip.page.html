@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title stryle="text-align:left" >Api</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-list>
+          <ion-item *ngFor="let character of characters">
+            <ion-card>
+              <img src="{{character.image}}">
+            <ion-label>{{character.name}}</ion-label>
+          </ion-card>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

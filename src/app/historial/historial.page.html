@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title stryle="text-align:center" >{{ "Historial" | translate }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list-header> {{ "Historial" | translate }} </ion-list-header>
+  <ion-list *ngFor= "let aux of conductor">
+    <ion-item>
+      <ion-label>{{ aux.nombre }}</ion-label>
+      <ion-note slot="end" color="danger"> {{ aux.nombre }}</ion-note>
+      <ion-card-content > "{{ 'Precio'| translate  }}": {{ aux.precio }}                  </ion-card-content>
+      <ion-card-content> "{{ 'Patente'| translate  }}": {{ aux.patente }}                 </ion-card-content>
+      <ion-card-content class="carta"> {{ "Hora esparada" | translate }}: {{ aux.hora }}  </ion-card-content>
+      <ion-card-content class="carta"> {{ "Área" | translate }}: {{ aux.area }}           </ion-card-content>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

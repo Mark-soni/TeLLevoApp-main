@@ -1,0 +1,227 @@
+#inputPlaces{
+  padding: 10px;
+    width: 600px;
+    height: 40px;
+}
+
+
+body {
+    margin: 0px;
+    color: white;
+  }
+  
+  .sb-title {
+    position: relative;
+    top: -12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+  }
+  
+  .sb-title-icon {
+    position: relative;
+    top: -5px;
+  }
+  
+  .card-container {
+    display: flex;
+    height: 500px;
+    width: 600px;
+  }
+  
+  .panel {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .half-input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .half-input {
+    max-width: 120px;
+  }
+  
+  .map {
+    width: 300px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+  input {
+    height: 30px;
+  }
+  
+  input {
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  input:focus::placeholder {
+    color: white;
+  }
+  
+  .button-cta {
+    height: 40px;
+    width: 40%;
+    background: #3367d6;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.48);
+    cursor: pointer;
+  }
+
+  
+
+  
+
+  .mapa {
+    width: 95%;
+    height: 50%;
+    border-radius: 3%;
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 20%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+  .color{
+    margin-top: 5%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .carta{
+    margin: 8px;
+  }
+
+
+  .BotonA {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .BotonB {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  .button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  
+    padding: 18px;
+    border-radius: 5px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 10px;
+  }
+  
+  .button-5 {
+    position: relative;
+  }
+  
+  .button-5:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #212121;
+    border-right: 3px solid #212121;
+    transition: all 0.2s, opacity 0.1s 0.2s;
+    opacity: 0;
+  }
+  
+  .button-5:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #212121;
+    border-left: 3px solid #212121;
+    transition: all 0.2s, opacity 0.1s 0.2s;
+    opacity: 0;
+  }
+  
+  .button-5:hover:after, .button-5:hover:before {
+    width: calc(93% + 1px);
+    height: calc(93% + 1px);
+    transition: all 0.2s, opacity 0.1s;
+    opacity: 1;
+    
+  }
+
+  .titulo{
+    text-align: center;
+    color: cadetblue;
+  }
+
+  .back{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  
+    padding: 18px;
+    border-radius: 5px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 50px;
+  }
+
+  .form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .err{
+    margin-bottom: 33%;
+  }
+
+  

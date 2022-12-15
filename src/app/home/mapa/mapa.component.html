@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title stryle="text-align:center" >{{ "Mapa" | translate }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button class="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<body>
+
+
+<ion-content class="content"> 
+<!--Mapa-->
+<div class="mapa" #divMap></div>
+  <div class="BotonA">
+  <button class="button button-5"  (click)="mapRuta()">{{ "Calcular ruta" | translate }}</button>
+  </div>
+  <h1 class="err" style="margin-left: 15px;">{{ "La distancia es" | translate }}: {{distancia}}</h1>
+  
+  <div class="form-group" style="margin-top: 12px ;">
+    <button class="button button-5" ><ion-icon name="car-sport-sharp"></ion-icon> {{ "Tomar Viaje" | translate }}</button>
+    <button class="button button-5" [routerLink]="['/lector-qr']"><ion-icon name="scan-sharp"></ion-icon> {{ "QR Code" | translate }}</button>
+  </div>
+
+
+
+
+</ion-content>
+</body>

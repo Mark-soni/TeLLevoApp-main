@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-title class="titulo" stryle="text-align:left" >{{ "Restablecer" | translate }}</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+  
+  <ion-content> <!--logi-->
+
+    <ion-grid class="grid1">
+      
+        <ion-row class="row1">
+            <ion-col>
+              <div>
+                <img class="Pin" src="assets/Prueba3.png" >
+                <!--<h1 class="Bienvenido" >BIENVENIDO </h1>-->
+              </div>
+            </ion-col>
+        </ion-row>     
+        <ion-row class="row2">
+            <ion-col>
+              
+            </ion-col>
+        </ion-row>
+        
+    </ion-grid>
+  <ion-slide> <!--logi-->
+    <div class="contaier-login">
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <h1 class="nombreInicio">{{ "Restablecer Contraseña" | translate }}</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-list class="fondoInicio">
+                        <h6 class="texto1">{{ "Le enviaremos un correo electrónico con más instrucciones para restablecer su contraseña." | translate }}</h6>
+                        <ion-item>
+                            <ion-icon name="mail-sharp"class="icon-login"></ion-icon>
+                            <ion-input name="user" type="text" required placeholder="{{ 'Correo electrónico' | translate }}" #txtReset></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div class="form-group" style="margin-top: 12px ;">
+                        <button class="button button-5" (click)="onReset(txtReset)"> {{ "Restablecer" | translate }}</button>
+                      </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-label>
+                        <h3 class="contra">{{ "Para mas ayuda contactar al TellevoApp@duocuc.cl" | translate }}</h3>
+                    </ion-label>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        
+    </div>
+  </ion-slide> <!--logi-->
+
+  
+</ion-content>

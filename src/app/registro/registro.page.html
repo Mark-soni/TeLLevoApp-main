@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title stryle="text-align:center" > {{ "Registrar" | translate }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> <!--logi-->
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+      <ion-col>
+        <div>
+          <img class="Pin" src="assets/Prueba3.png" >
+          <!--<h1 class="Bienvenido" >BIENVENIDO </h1>-->
+        </div>
+      </ion-col>
+    </ion-row>     
+    <ion-row class="row2">
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-slide> <!--logi-->
+    <div class="contaier-login">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1 class="nombreInicio">{{ "Registrar" | translate }}</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list class="fondoInicio">
+
+              <ion-item>
+                <ion-icon name="person-sharp" class="icon-login"></ion-icon>
+                <ion-input name="user" type="text" required placeholder="{{ 'Nombre' | translate }}" #txtUser></ion-input>
+              </ion-item>     
+
+                <ion-item>
+                  <ion-icon name="mail-sharp" class="icon-login"></ion-icon>
+                  <ion-input name="user" type="text" required placeholder="{{ 'Correo' | translate }}" #txtEmail></ion-input>
+                </ion-item>
+
+                <br />
+
+                <ion-item>
+                  <ion-icon  name="eye-off"></ion-icon>
+                  <ion-input class="colors" name="password" type="password" required placeholder="{{ 'Contraseña' | translate }}" #txtPass></ion-input>
+                </ion-item>
+
+                <ion-list>
+                  <ion-radio-group [allowEmptySelection]="false" value="" #rTipo>
+                    <ion-item>
+                      <ion-label>{{ "Pasajero" | translate }}</ion-label>
+                      <ion-radio slot="end" value="Pasajero"></ion-radio>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label>{{ "Conductor" | translate }}</ion-label>
+                      <ion-radio class="colors" slot="end" value="Conductor"></ion-radio>
+                    </ion-item>
+                  </ion-radio-group>
+                </ion-list>
+
+                <ion-col>
+                  <button class="button button-5" (click)="registrar(txtUser, txtEmail, txtPass, rTipo)"> {{ "Registrar" | translate }}</button>
+                </ion-col>
+
+            </ion-list>
+          </ion-col>
+          <ion-row>
+
+            
+
+          </ion-row>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-slide> <!--logi-->
+</ion-content>

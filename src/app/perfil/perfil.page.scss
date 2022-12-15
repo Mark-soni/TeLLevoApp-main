@@ -1,0 +1,33 @@
+.avatar {
+    max-width: 10000px;
+    max-height: 1000px;
+    float: right;
+    object-fit: calc(15);
+    height: 200px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.ion-margin-start {
+    margin-top: 5%;
+}
+
+ion-col > div {
+    background-color: #f3f1f1;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 15pc;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+
+.por {
+    margin-left: 1%;
+    text-decoration: bold;
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+}

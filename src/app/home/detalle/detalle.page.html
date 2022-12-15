@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title >{{ "Detalles" | translate }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>    
+    <div id="map"></div>
+    <ion-card class="color">
+      <img src="{{ conductor.imagen }}" alt="">
+
+      <ion-card-header>
+        <ion-card-subtitle>{{ conductor.tipoAuto }} 
+        <ion-icon name="person-sharp"></ion-icon> 
+        {{ conductor.capacidad }} 
+        </ion-card-subtitle>
+        <ion-card-title class="nombreC"> 
+          {{ conductor.nombre }} 
+        </ion-card-title>
+      </ion-card-header>
+    <ion-card-content class="carta"> {{ "Precio" | translate }}: {{ conductor.precio }} </ion-card-content>
+    <ion-card-content class="carta"> {{ "Patente" | translate }}: {{ conductor.patente }} </ion-card-content>
+    <ion-card-content class="carta"> {{ "Hora esparada" | translate }}: {{ conductor.hora }} </ion-card-content>
+    <ion-card-content class="carta"> {{ "Área" | translate }}: {{ conductor.area }}</ion-card-content>
+  </ion-card>
+
+    <ion-button class="btnDetalle" expand="block" fill="outline" (click)="showModal()">{{ "Tomar viaje" | translate }}</ion-button>
+</ion-content>

@@ -1,0 +1,2 @@
+# TeLlevoApp
+Instalar (npm install)
